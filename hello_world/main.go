@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
+var z int // assigned value of 0
+var w = 999
+
 func main() {
 	fmt.Println("Hello, World!")
 
@@ -14,12 +17,15 @@ func main() {
 	}
 
 	// declare and assign a variable with :=
-	x := 42
-	fmt.Println(x)
-	x = 99
+	x := 99
 	fmt.Println(x)
 	y := 100 + 24
 	fmt.Println(y)
+
+	// use var declared outside of function body
+	z = 42
+	fmt.Println(z)
+	fmt.Println(w)
 }
 
 func foo() {
