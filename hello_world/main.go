@@ -7,11 +7,19 @@ func main() {
 
 	foo()
 
-	for i := 0; i < 100; i++ {
+	for i := 0; i < 10; i++ {
 		if i % 2 == 0 {
 			fmt.Println(i)
 		}
 	}
+
+	// declare and assign a variable with :=
+	x := 42
+	fmt.Println(x)
+	x = 99
+	fmt.Println(x)
+	y := 100 + 24
+	fmt.Println(y)
 }
 
 func foo() {
